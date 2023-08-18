@@ -1,0 +1,19 @@
+{
+  "name": "js09-nodejs",
+  "version": "1.0.1",
+  "description": "Uso de node y Axios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "axios",
+    "bootstrap",
+    "generation"
+  ],
+  "author": "David Olea",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
