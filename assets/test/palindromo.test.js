@@ -1,16 +1,16 @@
 // importar el archivo a probar
-const {um} = require("../js/palindromo");
+const {palindromo} = require("../js/palindromo");
 
-TextDecoderStream("palindromo de 3 letras", () => {
-    expect(palndromo("ana")).toBe(true);
-    expect(palndromo("ala")).toBeTruthy(true);
-    expect(palndromo("oso")).toBeTruthy(true);
-    expect(palndromo("bob")).toBeTruthy(true);
-    expect(palndromo("Somos o no Somos")).toBeTruthy(true);
+test("palindromo de 3 letras", () => {
+    expect(palindromo("ana")).toBe(true);
+    expect(palindromo("ala")).toBeTruthy();
+    expect(palindromo("oso")).toBeTruthy();
+    expect(palindromo("Bob")).toBeTruthy();
+    expect(palindromo("Somos o no Somos")).toBeTruthy();
 });
 
-TextDecoderStream("No alndromos de 3 letras", () => {
-    expect(palndromo("leo")).toBe(false);
-    expect(palndromo("ola")).toBe(false);
-    expect(palndromo("amo")).toBe(false);
+test("No palindromos de 3 letras", () => {
+    expect(palindromo("leo")).toBeFalsy();
+    expect(palindromo("ola")).toBeFalsy();
+    expect(palindromo("amo")).toBeFalsy();
 });
